@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hacker-hero"
+version = "1.0.0"
+description = "Editor for Frets on Fire song .ini files"
+requires-python = ">=3.12"
+dependencies = ["PySide6>=6.6"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
